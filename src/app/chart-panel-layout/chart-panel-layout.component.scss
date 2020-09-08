@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+mat-card {
+  width: 95%;
+  margin: 2.5%;
+  height: auto;
+  overflow: hidden;
+}
+
+.panel {
+  width: 95%;
+  margin: 0 0 2.5% 2.5%;
+  height: auto;
+}
+
+.display {
+  width: 100%;
+  height: auto;
+  margin-top: 5vh;
+}
+
+nav {
+  background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    height: 600px;
+    min-width: 748px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .mat-card {
+    width: 75%;
+    margin: 10px;
+    height: 100%;
+  }
+  .panel {
+    width: 25%;
+    height: 100%;
+    margin: 10px 10px 10px 0px;
+  }
+}

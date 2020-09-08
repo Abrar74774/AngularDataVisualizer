@@ -1,0 +1,41 @@
+<mat-card>
+  <mat-card-title>Chart Data</mat-card-title>
+  <mat-card-content>
+    <div class="chart-data-container">
+      <div class="chart-data">
+        <div
+          class="datafields"
+          *ngFor="let datafield of datafields"
+          key="datafield.id"
+        >
+          <p>{{ datafield.id }}</p>
+          <mat-form-field appearance="outline" id="name">
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              value="{{ datafield.name }}"
+              (input)="setName(datafield.id, $event)"
+            />
+          </mat-form-field>
+          <mat-form-field appearance="outline" id="value">
+            <mat-label>Value</mat-label>
+            <input
+              matInput
+              type="number"
+              value="{{ datafield.value }}"
+              (input)="setValue(datafield.id, $event)"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <button mat-flat-button color="primary" (click)="addDataField()">
+        Add
+      </button>
+      <button mat-flat-button color="accent" (click)="removeDataField()">
+        Remove
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

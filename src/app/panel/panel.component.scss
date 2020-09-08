@@ -1,0 +1,43 @@
+mat-card {
+  height: 100%;
+  mat-card-title {
+    text-align: center;
+  }
+}
+
+// .chart-data-container {
+//   max-height: 300px;
+// }
+
+.chart-data {
+  padding-top: 20px;
+}
+
+.datafields {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  p {
+    width: 6%;
+    padding: 0 0 7px;
+    margin-right: 2px;
+  }
+  #name {
+    width: 62%;
+    margin-right: 5px;
+  }
+  #value {
+    width: 32%;
+  }
+}
+
+.button-container {
+  display: flex;
+  max-width: 85%;
+  margin: 10px auto;
+  button {
+    margin: 2px;
+    width: calc(50% - 1px);
+    padding: 0;
+  }
+}
